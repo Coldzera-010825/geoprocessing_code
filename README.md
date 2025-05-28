@@ -22,7 +22,7 @@ The goal is to keep each script **self-contained** and **easy to reuse** in day-
 
 | Path | Description |
 |------|-------------|
-| `scripts/kml_ouput` | Export any GeoJSON / Shapefile / GeoPackage layer to **KML** (keeps attributes & CRS). |
+| `scripts/kml_ouput` | Create a user-defined **bounding rectangle** (by centre + size / by lat-lon extent) and save it as **KML**.  Optional flags let you export the same rectangle as Shapefile or GeoJSON. |
 | `scripts/shp2tif_workflow` | Generic **Shapefile → GeoTIFF** converter – supports geometry repair, size limits, float-32 attribute rasterisation (e.g. `DEPTH2D`). |
 
 Planned additions (📅 Q3 2025):
@@ -44,6 +44,9 @@ cd geodata-toolkit
 conda env create -f environment.yml
 conda activate geodata
 
-# 3. run a script
-python scripts/shp_to_tif.py --input data/shp_root --output data/tif_out
+# 3. launch JupyterLab / Notebook
+jupyter lab   # or  jupyter notebook
+
+# 4. open a notebook and run all cells
+#    e.g. notebooks/make_rectangle_kml.ipynb
 
