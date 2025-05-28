@@ -22,13 +22,13 @@ The goal is to keep each script **self-contained** and **easy to reuse** in day-
 
 | Path | Description |
 |------|-------------|
-| `scripts/export_kml.py` | Export any GeoJSON / Shapefile / GeoPackage layer to **KML** (keeps attributes & CRS). |
-| `scripts/shp_to_tif.py` | Generic **Shapefile → GeoTIFF** converter – supports geometry repair, size limits, float-32 attribute rasterisation (e.g. `DEPTH2D`). |
+| `scripts/kml_ouput` | Export any GeoJSON / Shapefile / GeoPackage layer to **KML** (keeps attributes & CRS). |
+| `scripts/shp2tif_workflow` | Generic **Shapefile → GeoTIFF** converter – supports geometry repair, size limits, float-32 attribute rasterisation (e.g. `DEPTH2D`). |
 
 Planned additions (📅 Q3 2025):
 
-* `scripts/coordinate_transformer.py` – batch re-project layers to target EPSG
-* `scripts/clip_by_polygon.py` – vector & raster clipping
+* `scripts/coordinate_transformer` – batch re-project layers to target EPSG
+* `scripts/clip_by_polygon` – vector & raster clipping
 * `notebooks/analysis_templates/` – ready-to-run Jupyter notebooks for common analyses
 
 ---
